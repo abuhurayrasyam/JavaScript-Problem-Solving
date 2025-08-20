@@ -65,3 +65,15 @@ function sumArray(array) {
   return sum;
 }
 console.log(sumArray([1, 2, 3, 4])); // Output: 10
+
+// Problem 7: Find Even Numbers in an Array
+function findEven(array) {
+  let evens = [];
+  for (let num of array) {
+    if (num % 2 === 0) {
+      evens.push(num);
+    }
+  }
+  return evens;
+}
+console.log(findEven([1, 2, 3, 4, 5, 6])); // Output: [2, 4, 6]
