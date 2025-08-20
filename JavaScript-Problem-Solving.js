@@ -43,3 +43,15 @@ function findMax(array) {
   return max;
 }
 console.log(findMax([5, 1, 9, 3])); // Output: 9
+
+// Problem 5: Remove Duplicates from an Array
+function removeDuplicates(array) {
+  let unique = [];
+  for (let num of array) {
+    if (!unique.includes(num)) {
+      unique.push(num);
+    }
+  }
+  return unique;
+}
+console.log(removeDuplicates([1, 2, 2, 3, 4, 4])); // Output: [1, 2, 3, 4]
